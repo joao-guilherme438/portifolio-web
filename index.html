@@ -34,7 +34,7 @@
             font-size: 0.85rem;
             font-weight: 600;
         }
-        h2 { color: #f1f5f9; font-size: 1.2rem; margin-top: 25px; border-left: 4px solid #38bdf8; padding-left: 10px; }
+        h2 { color: #f1f5f9; font-size: 1.2rem; margin-top: 30px; border-left: 4px solid #38bdf8; padding-left: 10px; margin-bottom: 15px; }
         p { line-height: 1.7; color: #94a3b8; font-size: 1rem; }
         
         .stack-container { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
@@ -46,6 +46,19 @@
             font-size: 0.9rem;
             border: 1px solid #475569;
         }
+
+        /* Estilo dos Cards de Projeto */
+        .project-card {
+            background: #0f172a;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover { transform: scale(1.02); border-color: #38bdf8; }
+        .project-card h3 { margin: 0 0 10px 0; font-size: 1.1rem; color: #38bdf8; }
+        .project-card p { font-size: 0.9rem; margin-bottom: 15px; }
 
         .links { display: flex; flex-direction: column; gap: 12px; margin-top: 35px; }
         .btn {
@@ -81,21 +94,29 @@
     <h2>Minhas Stacks</h2>
     <div class="stack-container">
         <div class="stack-item">Python (Pandas, Matplotlib)</div>
+        <div class="stack-item">Flask & Web Apps</div>
         <div class="stack-item">SQL (SQLite, MySQL)</div>
-        <div class="stack-item">Django & Web Apps</div>
         <div class="stack-item">Git & GitHub</div>
         <div class="stack-item">Data Visualization</div>
-        <div class="stack-item">Lógica de Programação</div>
+        <div class="stack-item">Automação de Processos</div>
     </div>
 
-    <h2>Destaque</h2>
-    <p>
-        Desenvolvi recentemente o <strong>Media Analytics Tool</strong>, um sistema que processa métricas de marketing (CTR/CPC) via SQL e gera dashboards automáticos de performance.
-    </p>
+    <h2>Projetos em Destaque</h2>
+    
+    <div class="project-card">
+        <h3>📊 Media Dash Pro</h3>
+        <p>Dashboard Full-Stack que processa relatórios de marketing em CSV, calcula KPIs (ROI/CPC) e gera gráficos dinâmicos em tempo real utilizando Flask e Pandas.</p>
+        <a href="https://github.com/joao-guilherme348/media-dash-pro" style="color: #38bdf8; text-decoration: none; font-size: 0.85rem; font-weight: bold;">Ver no GitHub →</a>
+    </div>
+
+    <div class="project-card">
+        <h3>🔍 Media Analytics Tool</h3>
+        <p>Ferramenta de análise focada em SQL para filtragem de métricas complexas de CTR e performance de anúncios.</p>
+        <a href="https://github.com/joao-guilherme438/media-performance-analytics" style="color: #38bdf8; text-decoration: none; font-size: 0.85rem; font-weight: bold;">Ver no GitHub →</a>
+    </div>
     
     <div class="links">
-        <a href="https://github.com/joao-guilherme438/media-performance-analytics" class="btn btn-primary" target="_blank">📊 Ver Projeto: Media Analytics</a>
-        <a href="https://github.com/joao-guilherme438" class="btn btn-secondary" target="_blank">📂 Acessar meu GitHub</a>
+        <a href="https://github.com/joao-guilherme348" class="btn btn-primary" target="_blank">📂 Acessar meu GitHub</a>
         <a href="https://www.linkedin.com/in/joão-guilherme-de-oliveira/" class="btn btn-secondary" target="_blank">💼 Conectar no LinkedIn</a>
     </div>
 
